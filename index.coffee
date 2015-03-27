@@ -1,5 +1,4 @@
 (($) ->
-
   $.fn.slider = (slider) ->
     slidesNumber = $('.b-slideshow-item').size()
     slideWidth = $('.b-slideshow-item').eq(1).width()
@@ -48,7 +47,7 @@
         $('.b-slider-nav li').eq(0).addClass 'active'
         activeSlide = $('.b-slider-nav li.active').index() + 1
       return
-    ), 8000
+    ), 7000
     return
 
   return
