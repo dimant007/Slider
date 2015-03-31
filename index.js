@@ -6,6 +6,7 @@
       var slideWidth = $('.b-slideshow-item').eq(1).width();
       $('.b-slider-nav li').eq(0).addClass('active');
       var activeSlide = 1;
+
       $('.b-slider-nav li').click(function () {
         var clickedSlide;
         $('.b-slider-nav li').removeClass('active');
@@ -72,6 +73,6 @@
       };
 
 
-}).call(this);
+})(jQuery);
 
 //# sourceMappingURL=index.js.map
