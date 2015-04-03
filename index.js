@@ -7,9 +7,7 @@
         slideWidth = $('.b-slideshow-item').eq(1).width();
         $('.b-slider-nav li').eq(0).addClass('active');
         activeSlide = 1;
-        $('.b-slideshow-right').click(function() {
-            slider.moveSlide();
-        });
+
 
         $('.b-slider-nav li').click(function () {
             var clickedSlide;
