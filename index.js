@@ -51,7 +51,6 @@
     };
 
     var interval = setInterval(moveRight, 4000);
-
     $('.b-slideshow-area').hover(function () {
         clearInterval(interval);
     }, function () {
