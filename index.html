@@ -3,8 +3,10 @@
 <head>
     <script src="jquery-latest.js"></script>
     <script type="text/javascript" src="index.js"></script>
-    <script>
-    $(".b-slideshow").slider();
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').slider();
+        });
     </script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -34,17 +36,18 @@
         </div>
     </div>
     <div class="b-carousel-block">
-    <ul class="b-slider-nav">
-        <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev1.jpg" alt="" /></a></li>
-        <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev2.jpg" alt="" /></a></li>
-        <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev3.jpg" alt="" /></a></li>
-        <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev4.jpg" alt="" /></a></li>
-        <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev5.jpg" alt="" /></a></li>
-    </ul>
+        <ul class="b-slider-nav">
+            <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev1.jpg" alt="" /></a></li>
+            <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev2.jpg" alt="" /></a></li>
+            <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev3.jpg" alt="" /></a></li>
+            <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev4.jpg" alt="" /></a></li>
+            <li class="b-carousel-block"><a href="#"><img src="img/thumbkiev5.jpg" alt="" /></a></li>
+        </ul>
     </div>
     <div class="b-slideshow-left"><img src="img/left.jpg"></div>
     <div class="b-slideshow-right"><img src="img/right.jpg"></div>
 </div>
+
 
 </body>
 </html>
