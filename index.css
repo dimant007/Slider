@@ -29,7 +29,6 @@ body {
 }
 .b-slideshow-item {
     display: inline-block;
-    display: inline;
     zoom:1;
     width: 640px;
     height: 480px;
@@ -41,19 +40,16 @@ body {
 }
 .b-slider-nav li {
     display: inline-block;
-    display: inline;
     zoom:1;
 }
 .b-slider-nav li a {
     display: inline-block;
-    display: inline;
     zoom:1;
     width: 85px;
     height: 65px;
     background: #fff;
     color: #000;
     margin-top: 5px;
-    margin: 3px;
 }
 .b-slider-nav li.active a {
     color: #fff;

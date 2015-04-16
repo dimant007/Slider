@@ -54,6 +54,7 @@
                 activeSlide = $('.b-slider-nav li.active').index() + 1;
             }
         }
+
         var interval = setInterval(moveRight, 5000);
 
         $('.b-slideshow-area').hover(function () {
