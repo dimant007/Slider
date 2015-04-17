@@ -1,5 +1,5 @@
 /**
- * Created by ditry_000 on 16.04.2015.
+ * Created by ditry_000 on 17.04.2015.
  */
 (function() {
     $.fn.slider = function(slider) {
@@ -22,8 +22,9 @@
             activeSlide = $('.b-slider-nav li.active').index() + 1;
         });
 
+    var sliding = {
 
-        function moveRight() {
+        right: function moveRight() {
             if (activeSlide < slidesNumber) {
                 $('.b-slideshow-list').animate({
                     left: '-=0' + slideWidth + 'px'
@@ -39,8 +40,9 @@
                 $(carouselItem).eq(0).addClass('active');
                 activeSlide = $('.b-slider-nav li.active').index() + 1;
             }
-        }
-        function moveLeft() {
+        },
+
+        left: function moveLeft() {
             if (activeSlide > 1) {
                 $('.b-slideshow-list').animate({
                     left: '+=0' + slideWidth + 'px'
@@ -57,24 +59,15 @@
                 activeSlide = $('.b-slider-nav li.active').index() + 1;
             }
         }
-
-        var interval = setInterval(moveRight, 5000);
-
-        $('.b-slideshow-area').hover(function () {
-            clearInterval(interval);
-        }, function () {
-            interval = setInterval(moveRight, 5000);
-        });
-
+    };
 
         $('.b-slideshow-right').click(function () {
-            moveRight();
+            sliding.right();
         });
 
         $('.b-slideshow-left').click(function () {
-            moveLeft();
+            sliding.left();
         });
     };
-
 
 })(jQuery);

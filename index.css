@@ -33,6 +33,10 @@ body {
     width: 640px;
     height: 480px;
 }
+.b-slideshow-item img{
+    width: 640px;
+    height: 480px;
+}
 .b-slider-nav {
     position: absolute;
     right: 10px;
