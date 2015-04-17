@@ -2,7 +2,7 @@
  * Created by ditry_000 on 17.04.2015.
  */
 (function() {
-    $.fn.slider = function(slider) {
+    $.fn.slider = function() {
 
         var item = $('.b-slideshow-item');
         var carouselItem = $('.b-slider-nav li');
@@ -24,7 +24,7 @@
 
     var sliding = {
 
-        right: function moveRight() {
+        right: function() {
             if (activeSlide < slidesNumber) {
                 $('.b-slideshow-list').animate({
                     left: '-=0' + slideWidth + 'px'
@@ -42,7 +42,7 @@
             }
         },
 
-        left: function moveLeft() {
+        left: function() {
             if (activeSlide > 1) {
                 $('.b-slideshow-list').animate({
                     left: '+=0' + slideWidth + 'px'
@@ -56,10 +56,18 @@
                 }, 800);
                 $(carouselItem).removeClass('active');
                 $(carouselItem).eq(-1).addClass('active');
-                activeSlide = $('.b-slider-nav li.active').index() + 1;
+                activeSlide = $('carouselItem.active').index() + 1;
             }
         }
     };
+
+        var interval = setInterval(sliding.right, 5000);
+
+        $('.b-slideshow-area').hover(function () {
+            clearInterval(interval);
+        }, function () {
+            interval = setInterval(sliding.right, 5000);
+        });
 
         $('.b-slideshow-right').click(function () {
             sliding.right();
