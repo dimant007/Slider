@@ -1,23 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <script src="jquery-latest.js"></script>
-    <script type="text/javascript" src="index2.js"></script>
-    <script type="text/javascript">
-            $('.slider').slider();
-    </script>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
 <body>
 
-<h1>Some photos of Kiev</h1>
+<div class="slider" id="b-slideshow">
 
-<div class="b-slideshow">
-
-    <div class="b-slideshow-area">
+    <div id="b-slideshow-area">
         <div class="b-slideshow-list">
             <div class="b-slideshow-item">
-                <img src="img/kiev1.jpg" alt="" />
+                <img src="img/kiev1.jpg" alt="Kijow" />
             </div>
             <div class="b-slideshow-item">
                 <img src="largeimg/kiev2.jpg" alt="" />
@@ -44,6 +37,12 @@
     </div>
     <div class="b-slideshow-left"><img src="img/left.jpg"></div>
     <div class="b-slideshow-right"><img src="img/right.jpg"></div>
+
+    <script type="text/javascript" src="jquery-latest.js"></script>
+    <script type="text/javascript" src="index2.js"></script>
+    <script type="text/javascript">
+        $('.slider').slider();
+    </script>
 </div>
 </body>
 </html>

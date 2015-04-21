@@ -5,7 +5,7 @@
 
     var sliding = {
 
-        init: function(){
+        init: function() {
 
             this.item = $('.b-slideshow-item');
             this.carouselItem = $('.b-slider-nav li');
@@ -62,16 +62,7 @@
 
     $.fn.slider = function() {
 
-        $(this.carouselItem).click(function () {
-            var clickedSlide, activeSlide;
-            $('.b-slider-nav li').removeClass('active');
-            $(this).addClass('active');
-            clickedSlide = $(this).index() + 1;
-            $('.b-slideshow-list').animate({
-                left: -this.slideWidth * (clickedSlide - 1) + 'px'
-            }, 800);
-            activeSlide = $('.b-slider-nav li.active').index() + 1;
-        });
+        sliding.init();
 
         sliding.start();
 

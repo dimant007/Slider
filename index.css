@@ -10,13 +10,13 @@ h1 {
 body {
     padding: 20px;
 }
-.b-slideshow {
+#b-slideshow {
     height: 480px;
     width: 640px;
     margin: 0 auto;
     position: relative;
 }
-.b-slideshow-area {
+#b-slideshow-area {
     width: 640px;
     height: 480px;
     overflow: hidden;
